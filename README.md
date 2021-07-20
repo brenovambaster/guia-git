@@ -14,9 +14,20 @@
    <img alt="Git" src="https://img.shields.io/badge/Git-red">
 
    <img alt="GitHub" src="https://img.shields.io/badge/Github-success">
+   <img alt="author" src="https://img.shields.io/badge/Author-Breno%20Vamb%C3%A1ster-important">
 </p>
 <br>
-Após baixado, instalado e configurado o git, vamos crair o nosso primeiro repositório.
+
+__Esse é apenas um guia com comandos básicos, ainda se faz nescessário ler o livro (disposto detro das notas) ou estudar por outra fonte.__
+
+___Para aqueles que quiserem contribuir com esse repositório, fique a vontade, basta dar um fork e criar uma pull request.___
+
+## 0 Notas:  
+ 
+* O Livro gratuito para aprender git: http://git-scm.com/book/pt-br/v2
+
+* Após baixado, instalado e configurado o git, vamos criar o nosso primeiro repositório.
+
 
 ## 1 Inicializando o repositório local
 ``` 
@@ -30,20 +41,28 @@ Após baixado, instalado e configurado o git, vamos crair o nosso primeiro repos
 ``` 
  Lista todas as alterações e estado de arquivos ou repositórios. Para todo arquivo ou diretório modificado, ao dar o comando `git status` , mostrará  os arquivos prontos para serem adicionados ao _Index_   
 
-## 3 Adicionar os arquivos modificados ao *Index*.
-Para adicionarmos um arquivo, usamamos:     
+## 3 Adicionar os arquivos/diretórios modificados ao *Index*.
+Para adicionarmos __um arquivo__, usamamos:     
 ```
 > git add name_file.js
 ```
-Para adicionarmos vários arquivos, usamos: 
+Para adicionarmos __vários arquivos__, usamos: 
 ```
 > git add name_file.js file2.js file3.js
 ```
-Para _todos_ os arquivos modificados, usamos 
+Para __todos os arquivos__ modificados, usamos 
 ```
 > git add .
 ```
+Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos confirmá-los ou `commit`. 
 
+![tree](./img/trees.png)
+
+## 4 Comitar arquivo / diretório
+Comitar apenas um arquivo:
+```
+> git commit meu_arquivo.txt -m"messagem para o commit"
+```
 
 
 
