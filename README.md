@@ -2,7 +2,11 @@
 <br>
 
 <h1 align="center"> Guia prático de Git e Github</h1>
-<p align="center"> Para Iniciantes</p>
+<p align="center"> Para Iniciantes </p>
+
+<p align="center"> 
+    <img  src="./img/git.png" alt="git"> 
+</p>
 
 
 <p align="center">
