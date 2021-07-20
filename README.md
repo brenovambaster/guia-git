@@ -5,7 +5,7 @@
 <p align="center"> Para Iniciantes </p>
 
 <p align="center"> 
-    <img  src="./img/git.png" alt="git"> 
+    <img  src="./img/git2.png" alt="git" height="200px"> 
 </p>
 
 
