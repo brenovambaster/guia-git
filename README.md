@@ -1,7 +1,7 @@
 
 <br>
 
-<h1 align="center"> Guia pŕatico de Git e Github</h1>
+<h1 align="center"> Guia prático de Git e Github</h1>
 <p align="center"> Para Iniciantes</p>
 
 
