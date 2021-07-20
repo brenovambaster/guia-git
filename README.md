@@ -22,6 +22,8 @@ __Esse é apenas um guia com comandos básicos, ainda se faz nescessário ler o 
 
 ___Para aqueles que quiserem contribuir com esse repositório, fique a vontade, basta dar um fork e criar uma pull request.___
 
+___Ainda está em andamento...___
+
 ## 0 Notas:  
  
 * O Livro gratuito para aprender git: http://git-scm.com/book/pt-br/v2
