@@ -24,7 +24,7 @@
 
 __Esse é apenas um guia com comandos básicos, ainda se faz nescessário ler o livro (disposto detro das notas) ou estudar por outra fonte.__
 
-___Para aqueles que quiserem contribuir com esse repositório, fique a vontade, basta dar um fork e criar uma pull request.___
+___Para aqueles que quiserem contribuir com esse repositório, fique à vontade, basta dar um fork e criar uma pull request.___
 
 ___Ainda está em andamento...___
 ___
