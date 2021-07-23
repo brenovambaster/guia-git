@@ -1,0 +1,19 @@
+commit 2a3f2b6245ee3bcd51545ff366269bd5243aa904
+Author: Breno Vambáster <42620040+brenovambaster@users.noreply.github.com>
+Date:   Tue Jul 20 09:49:58 2021 -0300
+
+    Update README.md
+
+diff --git a/README.md b/README.md
+index 5288420..6906631 100644
+--- a/README.md
++++ b/README.md
+@@ -5,7 +5,7 @@
+ <p align="center"> Para Iniciantes </p>
+ 
+ <p align="center"> 
+-    <img  src="./img/git.png" alt="git"> 
++    <img  src="./img/git2.png" alt="git" height="200px"> 
+ </p>
+ 
+ 
