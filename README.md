@@ -29,16 +29,23 @@ ___Para aqueles que quiserem contribuir com esse repositório, fique à vontade,
 ___Ainda está em andamento...___
 ___
 
-### Índice
 
-   [0. Notas](#0-notas)
-   [1. Init](#1-inicializando-o-repositório-local)
-   [2. Status](#2-verificar-o-status-do-repositório)
-   [3. Add](#3-adicionar-os-arquivos-ou-diretórios-modificados-ao-index)
-   [4. Commit](#4-comitar-arquivo-ou-diretório)
-   [5. Log e show](#5-visualizando-alterações)
-   [6. Checkout](#6-checkout)
-   [7. Reset](#6-checkout)
+
+|  Índice||
+|---|---|
+| [0. Notas](#0-notas) |[8. Merge]()   |
+| [1. Init](#1-inicializando-o-repositório-local) | [9. Title ]()   |
+| [2. Status](#2-verificar-o-status-do-repositório) | [10. Title]()| 
+|[3. Add](#3-adicionar-os-arquivos-ou-diretórios-modificados-ao-index) |[11. Title]() |
+| [4. Commit](#4-comitar-arquivo-ou-diretório)| [12. Title]()|
+| [5. Log e show](#5-visualizando-alterações)|  [13. Title]() |
+| [6. Checkout](#6-checkout)| [14. Title]()|   
+| [7. Reset](#6-checkout)| [15. Title]()|   
+   
+   
+   
+  
+   
 
 ___
 
