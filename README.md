@@ -154,12 +154,19 @@ Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos 
   ```shell
     $ git checkout -- arquivo.txt
   ```
+  Mais pra frente veremos que o `git checkout` também pode ser usado para outros fins, por exemplo, mudar de branch.
 
 ## 7 Reset: Desfazendo commits
   Há duas formas de usarmos o `git reset`: 
-  * `> git reset HEAD~1`: Note que o commit foi desfeito, mas as alterações feitas nos arquivos permaneceram. Ao usar o `git reset` a opção padrão é a `--soft`.
+  * Note que o commit será desfeito, mas as alterações feitas nos arquivos permanecerão prontas para serem comitadas novamente( no stage ou index). Ao usar o `git reset` a opção padrão é a `--soft`.
+    ```shell
+    $ git reset HEAD~1
+    ``` 
   
-  * `> git reset --hard HEAD~1`: Neste caso as alterações nos arquivos também serão desfeitas com o commit.
+  * No caso a seguir, as alterações nos arquivos também serão desfeitas juntamente com o commit.
+    ```shell 
+    $ git reset --hard HEAD~1
+    ``` 
 
 
 
