@@ -112,7 +112,7 @@ Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos 
     ``` 
 
     ```shell 
-      $ git log --graph  //mostra de forma gŕafica as brachs
+      $ git log --graph  //mostra de forma gŕafica as branchs
     ``` 
   - ### show  
     Com a hash do commit supracitado é possível ver informações adicionais e relevantes do commit em questão. Esse comando mostra as alterações feita no arquivo.
@@ -143,7 +143,7 @@ Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos 
     Mostra as mudanças no arquivo depois de adicionado ao stage (`git add .`) antes mesmo de ser "commitdado".
     Como usar: 
     ```shell  
-      $ git diff 
+    $ git diff 
     ``` 
 
 
