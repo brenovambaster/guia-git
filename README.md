@@ -228,8 +228,7 @@ ___
   
   Logo após sera exibida uma mensagem semelhante a essa "Agent pid 300" (Número gerado aleatoriamente), então digite os seguinte comando, no qual direcionara para o acesso a sua chave privada: <br> <br>
     ```shell 
-    $ git ssh-add "caminhoAteChave" 
-    
+    $ git ssh-add "caminhoAteChave"
     ex: $ git ssh-add "C:\Users\usuario/.ssh/id_ed25519"
     ```
   
