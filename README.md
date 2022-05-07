@@ -45,7 +45,7 @@ ___
 | Índice                                                                |                    |
 | --------------------------------------------------------------------- | ------------------ |
 | [0. Notas](#0-notas)                                                  | [8. Merge](#8-merge) |
-| [1. Init](#1-inicializando-o-repositório-local)                       | [9. Chave SSH ]()  |
+| [1. Init](#1-inicializando-o-repositório-local)                       | [9. Chave SSH ](#9-chave-ssh-o-que-é-e-como-gerar)  |
 | [2. Status](#2-verificar-o-status-do-repositório)                     | [10. Title]()      |
 | [3. Add](#3-adicionar-os-arquivos-ou-diretórios-modificados-ao-index) | [11. Title]()      |
 | [4. Commit](#4-comitar-arquivo-ou-diretório)                          | [12. Title]()      |
