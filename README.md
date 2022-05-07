@@ -78,7 +78,8 @@ Para realizar essa configuração basta realizar os seguintes comandos: <br>
   $ git config --global user.name seuNome
   ```
   Pronto seu usuário está configurado! <br>
-  <p>Com o seguinte comando você cria o seu repositório local e está pronto para clonar ou criar o seu projeto.</p> <br>
+  <p>Com o seguinte comando você cria o seu repositório local e está pronto para clonar ou criar o seu projeto.</p> 
+  
   ```shell
   $ git init
   ```
