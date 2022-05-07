@@ -171,6 +171,7 @@ Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos 
 ## 9 Chave SSH: O que é e como Gerar?
   De maneira simplificada uma chave SSH é uma maneira de assegurar a segurança entre a conexao entre sua máquina e o repositório do GitHub  <br>
   * Para verificar se já possui uma chave SSH registrada ou caso queira adicionar uma nova basta ir no seu perfil do github e acessar settings>SSH and GPG keys. <br>
+  
   Vamos explicar passo a passo como criar uma nova chave SSH: <br> <br>
   1 - Inicialmente vamos gerar uma nova chave (Será necessário utilizar o email o qual está vinculado ao GitHub para gerar a chave) <br>
     ```shell
