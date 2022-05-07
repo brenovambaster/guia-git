@@ -22,7 +22,7 @@
 </p>
 <br>
 
-__Esse é apenas um guia com comandos básicos, ainda se faz nescessário ler o livro (disposto detro das notas) ou estudar por outra fonte.__
+__Esse é apenas um guia com comandos básicos, ainda se faz nescessário ler o livro (disposto dentro das notas) ou estudar por outra fonte.__
 
 ___Para aqueles que quiserem contribuir com esse repositório, fique à vontade, basta dar um fork e criar uma pull request.___
 
@@ -34,7 +34,7 @@ ___
 |  Índice||
 |---|---|
 | [0. Notas](#0-notas) |[8. Merge]()   |
-| [1. Init](#1-inicializando-o-repositório-local) | [9. Title ]()   |
+| [1. Init](#1-inicializando-o-repositório-local) | [9. Chave SSH ]()   |
 | [2. Status](#2-verificar-o-status-do-repositório) | [10. Title]()| 
 |[3. Add](#3-adicionar-os-arquivos-ou-diretórios-modificados-ao-index) |[11. Title]() |
 | [4. Commit](#4-comitar-arquivo-ou-diretório)| [12. Title]()|
@@ -167,11 +167,48 @@ Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos 
     ```shell 
     $ git reset --hard HEAD~1
     ``` 
-
-
-
-
-
+    
+## 9 Chave SSH: O que é e como Gerar?
+  De maneira simplificada uma chave SSH é uma maneira de assegurar a segurança entre a conexao entre sua máquina e o repositório do GitHub  
+  * Para verificar se já possui uma chave SSH registrada ou caso queira adicionar uma nova basta ir no seu perfil do github e acessar settings>SSH and GPG keys 
+  Vamos explicar passo a passo como criar uma nova chave SSH:
+  1 - Inicialmente vamos gerar uma nova chave (Será necessário utilizar o email o qual está vinculado ao GitHub para gerar a chave)
+    ```shell
+    $ git ssh-keygen -t ed25519 -C seuemail@mail.com
+    ``` 
+    Após ser a execução do comando, perguntará qual local a chave será armazenada, para selecionar o local padrão bastar apertar Enter (Recomendado utilizar padrão)
+    Logo após aparecerá um campo para criar uma senha ou continuar sem uma senha (Altamente recomendado criar uma senha)
+    Ao final será gerado duas chaves, uma publica e outra privada e será exibido o Local onde foram salvas (Importate)
+    
+  2 - Adicionando Chave SSH ao GitHub
+  Logo após iremos acessar o local onde foi salvo as chaves através do comando:
+    ```shell 
+    $ git cd "CaminhoAteDiretorio"
+    ex: $ git cd "C:\Users\usuario/.ssh/"
+    ``` 
+    
+  Entao iremos acessar o arquivo que contem a chave publica através do comando:
+     ```shell 
+    $ git cat id_ed25519.pub
+    ```
+  Irá aparecer a chave gerada, você deverá copiá-la e vincula-la a suas chaves através do seu Perfil no GitHub > settings > SSH and GPG keys > new SSH Key
+  O Titulo fica a seu critério Ok? ;)
+  Logo após sera exigido sua senha do GitHub para validação.
+  
+  3 - Validando chave SSH
+  Para que sua chave funcione corretamente será necessário que seu computador saiba o que fazer com ela, portanto vamos seguir os seguintes passos:
+    ```shell 
+    $ git eval $(ssh-agent -s)
+    ``` 
+  Ao utilizar esse comando voce esta indicando para o computador iniciar o projeto e executar esse processo em segundo plano.
+  Logo após sera exibida uma mensagem semelhante a essa "Agent pid 300" (Número gerado aleatoriamente), então digite os seguinte comando, no qual direcionara para o acesso a sua chave privada:
+    ```shell 
+    $ git ssh-add "caminhoAteChave"
+    ex: $ git ssh-add "C:\Users\usuario/.ssh/id_ed25519"
+    ```
+  Logo apos sera exigido que digite a senha a qual foi criada a chave.
+  Prontinho sua chave foi gerada com sucesso,ativada e vinculada a sua conta, mas Lembre-se *NUNCA DIVULGUE SUA CHAVE PRIVADA*!!!
+  Sempre que você quiser acessar um servidor remoto, basta copiar ou pedir que o administrador copie sua chave pública para ele.
 
 
 <br><br><br><br><br><br>
