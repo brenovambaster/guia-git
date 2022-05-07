@@ -203,6 +203,7 @@ ___
     
   ### 2 - Adicionando Chave SSH ao GitHub
   Logo após iremos acessar o local onde foi salvo as chaves através do comando: <br> <br>
+  
   ```shell 
     $ git cd "CaminhoAteDiretorio"
     ex: $ git cd "C:\Users\usuario/.ssh/"
@@ -227,10 +228,11 @@ ___
   Ao utilizar esse comando voce esta indicando para o computador iniciar o projeto e executar esse processo em segundo plano. <br>
   
   Logo após sera exibida uma mensagem semelhante a essa "Agent pid 300" (Número gerado aleatoriamente), então digite os seguinte comando, no qual direcionara para o acesso a sua chave privada: <br> <br>
-    ```shell 
-    $ git ssh-add "caminhoAteChave"
-    ex: $ git ssh-add "C:\Users\usuario/.ssh/id_ed25519"
-    ```
+    
+  ```shell 
+  $ git ssh-add "caminhoAteChave"
+  ex: $ git ssh-add "C:\Users\usuario/.ssh/id_ed25519"
+  ```
   
   Logo apos sera exigido que digite a senha a qual foi criada a chave. <br>
   Prontinho sua chave foi gerada com sucesso,ativada e vinculada a sua conta, mas Lembre-se *NUNCA DIVULGUE SUA CHAVE PRIVADA*!!! <br>
