@@ -78,6 +78,10 @@ Para realizar essa configuração basta realizar os seguintes comandos: <br>
   $ git config --global user.name seuNome
   ```
   Pronto seu usuário está configurado! <br>
+  Para checar as configurações e ver se realmente foi salvo corretamente as informações use: <br>
+  ```shell
+  $ git config --list
+  ```
   Caso tenha Digitado algo errado e queira remover o usario/email basta usar os seguintes comandos: <br>
   ```shell
   $ git config --global --unset user.email
