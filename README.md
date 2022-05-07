@@ -180,7 +180,11 @@ Para realizar essa configuração basta realizar os seguintes comandos: <br>
     ```shell  
     $ git diff 
     ``` 
-
+  - ### remote
+    Mostra o caminho ao qual o repositório remoto está vinculado. <br>
+    ```shell 
+      $ git remote -v
+    ``` 
 
 
 
