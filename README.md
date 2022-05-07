@@ -67,11 +67,21 @@ ___
 * Após baixado, instalado e configurado o git, vamos criar o nosso primeiro repositório.
 
 
-## 1 Inicializando o repositório local
+## 1 Inicializando o repositório local e Configurando Usuário
+
+Se é a primeira vez que você usa o Git é necessário configurar seu Usuário, atravez dessa configuração será indicado que você é o autor do conteudo ali colocado <br>
+Para realizar essa configuração basta realizar os seguintes comandos: <br>
+  ```shell
+  $ git config --global user.mail "seuEmail@mail.com"
+  ```
+  ```shell
+  $ git config --global user.name seuNome
+  ```
+  Pronto seu usuário está configurado! <br>
+  <p>Com o seguinte comando você cria o seu repositório local e está pronto para clonar ou criar o seu projeto.</p> <br>
   ```shell
   $ git init
   ```
-  <p>Com esse comando você cria o seu repositório local e está pronto para clonar ou criar o seu projeto.</p>
 
 ## 2 Verificar o status do repositório
   ```shell
