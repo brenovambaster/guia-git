@@ -173,10 +173,10 @@ Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos 
   * Para verificar se já possui uma chave SSH registrada ou caso queira adicionar uma nova basta ir no seu perfil do github e acessar settings>SSH and GPG keys. <br>
   
   Vamos explicar passo a passo como criar uma nova chave SSH: <br> <br>
-  1 - Inicialmente vamos gerar uma nova chave (Será necessário utilizar o email o qual está vinculado ao GitHub para gerar a chave) <br>
+  1 - Inicialmente vamos gerar uma nova chave (Será necessário utilizar o email o qual está vinculado ao GitHub para gerar a chave) <br> <br>
     ```shell
     $ git ssh-keygen -t ed25519 -C seuemail@mail.com
-    ``` <br>
+    ``` <br> <br>
     Após ser a execução do comando, perguntará qual local a chave será armazenada, para selecionar o local padrão bastar apertar Enter (Recomendado utilizar padrão) <br>
     Logo após aparecerá um campo para criar uma senha ou continuar sem uma senha (Altamente recomendado criar uma senha) <br>
     Ao final será gerado duas chaves, uma publica e outra privada e será exibido o Local onde foram salvas (Importate) <br>
