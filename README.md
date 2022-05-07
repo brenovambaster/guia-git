@@ -197,7 +197,7 @@ Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos 
   Logo após sera exigido sua senha do GitHub para validação. <br>
   
   3 - Validando chave SSH <br> <br>
-  Para que sua chave funcione corretamente será necessário que seu computador saiba o que fazer com ela, portanto vamos seguir os seguintes passos: <br>
+  Para que sua chave funcione corretamente será necessário que seu computador saiba o que fazer com ela, portanto vamos seguir os seguintes passos: <br> <br>
     ```shell 
     $ git eval $(ssh-agent -s)
     ``` <br> <br>
