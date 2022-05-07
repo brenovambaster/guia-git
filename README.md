@@ -31,16 +31,16 @@ ___
 
 
 
-|  Índice||
-|---|---|
-| [0. Notas](#0-notas) |[8. Merge]()   |
-| [1. Init](#1-inicializando-o-repositório-local) | [9. Chave SSH ]()   |
-| [2. Status](#2-verificar-o-status-do-repositório) | [10. Title]()| 
-|[3. Add](#3-adicionar-os-arquivos-ou-diretórios-modificados-ao-index) |[11. Title]() |
-| [4. Commit](#4-comitar-arquivo-ou-diretório)| [12. Title]()|
-| [5. Log e show](#5-visualizando-alterações)|  [13. Title]() |
-| [6. Checkout](#6-checkout)| [14. Title]()|   
-| [7. Reset](#6-checkout)| [15. Title]()|   
+| Índice                                                                |                    |
+| --------------------------------------------------------------------- | ------------------ |
+| [0. Notas](#0-notas)                                                  | [8. Merge](#merge) |
+| [1. Init](#1-inicializando-o-repositório-local)                       | [9. Chave SSH ]()  |
+| [2. Status](#2-verificar-o-status-do-repositório)                     | [10. Title]()      |
+| [3. Add](#3-adicionar-os-arquivos-ou-diretórios-modificados-ao-index) | [11. Title]()      |
+| [4. Commit](#4-comitar-arquivo-ou-diretório)                          | [12. Title]()      |
+| [5. Log e show](#5-visualizando-alterações)                           | [13. Title]()      |
+| [6. Checkout](#6-checkout)                                            | [14. Title]()      |
+| [7. Reset](#6-checkout)                                               | [15. Title]()      |
    
    
    
@@ -57,35 +57,36 @@ ___
 
 
 ## 1 Inicializando o repositório local
-```shell
-$ git init
-```
-<p>Com esse comando você cria o seu repositório local e está pronto para clonar ou criar o seu projeto.</p>
+  ```shell
+  $ git init
+  ```
+  <p>Com esse comando você cria o seu repositório local e está pronto para clonar ou criar o seu projeto.</p>
 
 ## 2 Verificar o status do repositório
-```shell
-$ git status
-``` 
+  ```shell
+  $ git status
+  ``` 
  Lista todas as alterações e estado de arquivos ou repositórios. Para todo arquivo ou diretório modificado, ao dar o comando `git status` , mostrará  os arquivos prontos para serem adicionados ao _index_   
 
 ## 3 Adicionar os arquivos ou diretórios modificados ao *Index*
-Para adicionarmos __um arquivo__, usamamos:     
-```shell
-$ git add name_file.js
-```
-Para adicionarmos __vários arquivos__, usamos: 
-```shell
-$ git add name_file.js file2.js file3.js
-```
-Para __todos os arquivos__ modificados, usamos 
-```shell
-$ git add .
-```
-> **Remover arquivo do _Index_:** Após ter adicionado o arquivo ao Index (com o **`git add .`** )  é possível removê-lo com o comando `git reset HEAD file_name.txt`
+  Para adicionarmos __um arquivo__, usamamos:     
+  ```shell
+  $ git add name_file.js
+  ```
 
-Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos confirmá-los ou `commit`. 
+  Para adicionarmos __vários arquivos__, usamos: 
+  ```shell
+  $ git add name_file.js file2.js file3.js
+  ```
+  Para __todos os arquivos__ modificados, usamos 
+  ```shell
+  $ git add .
+  ```
+  > **Remover arquivo do _Index_:** Após ter adicionado o arquivo ao Index (com o **`git add .`** )  é possível removê-lo com o comando `git reset HEAD file_name.txt`
 
-![tree](./img/trees.png)
+  Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos confirmá-los ou `commit`. 
+
+  ![tree](./img/trees.png)
 
 ## 4 Comitar arquivo ou diretório
   Comitar apenas um arquivo:
@@ -167,46 +168,59 @@ Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos 
     ```shell 
     $ git reset --hard HEAD~1
     ``` 
-    
+
+## 8 Merge
+
+  Obs* Logo logo fica pronto
+___
+  <br><br>
+
 ## 9 Chave SSH: O que é e como Gerar?
   De maneira simplificada uma chave SSH é uma maneira de assegurar a segurança entre a conexao entre sua máquina e o repositório do GitHub  <br>
   * Para verificar se já possui uma chave SSH registrada ou caso queira adicionar uma nova basta ir no seu perfil do github e acessar settings>SSH and GPG keys. <br>
   
   Vamos explicar passo a passo como criar uma nova chave SSH: <br> <br>
-  1 - Inicialmente vamos gerar uma nova chave (Será necessário utilizar o email o qual está vinculado ao GitHub para gerar a chave) <br> <br>
-    ```shell
+  ### 1 - Inicialmente vamos gerar uma nova chave (Será necessário utilizar o email o qual está vinculado ao GitHub para gerar a chave)
+
+  ```shell
     $ git ssh-keygen -t ed25519 -C seuemail@mail.com
-    ``` <br> <br>
-    Após ser a execução do comando, perguntará qual local a chave será armazenada, para selecionar o local padrão bastar apertar Enter (Recomendado utilizar padrão) <br>
-    Logo após aparecerá um campo para criar uma senha ou continuar sem uma senha (Altamente recomendado criar uma senha) <br>
-    Ao final será gerado duas chaves, uma publica e outra privada e será exibido o Local onde foram salvas (Importate) <br>
+  ```
+
+  Após ser a execução do comando, perguntará qual local a chave será armazenada, para selecionar o local padrão bastar apertar Enter (Recomendado utilizar padrão) <br>
+  Logo após aparecerá um campo para criar uma senha ou continuar sem uma senha (Altamente recomendado criar uma senha) <br>
+  Ao final será gerado duas chaves, uma publica e outra privada e será exibido o Local onde foram salvas (Importate) <br>
     
-  2 - Adicionando Chave SSH ao GitHub <br>
+  ### 2 - Adicionando Chave SSH ao GitHub
   Logo após iremos acessar o local onde foi salvo as chaves através do comando: <br> <br>
-    ```shell 
+  ```shell 
     $ git cd "CaminhoAteDiretorio"
     ex: $ git cd "C:\Users\usuario/.ssh/"
-    ``` <br>
+  ```
     
   Entao iremos acessar o arquivo que contem a chave publica através do comando: <br> <br>
-     ```shell 
-    $ git cat id_ed25519.pub
-    ``` <br> <br>
+    
+  ```shell 
+    $ git cat id_ed25519.pub 
+  ```
   Irá aparecer a chave gerada, você deverá copiá-la e vincula-la a suas chaves através do seu Perfil no GitHub > settings > SSH and GPG keys > new SSH Key <br>
-  O Titulo fica a seu critério Ok? ;) <br>
+  O Titulo fica a seu critério Ok? ;)
+  
   Logo após sera exigido sua senha do GitHub para validação. <br>
   
-  3 - Validando chave SSH <br> <br>
-  Para que sua chave funcione corretamente será necessário que seu computador saiba o que fazer com ela, portanto vamos seguir os seguintes passos: <br> <br>
-    ```shell 
-    $ git eval $(ssh-agent -s)
-    ``` <br> <br>
+  ### 3 - Validando chave SSH
+  Para que sua chave funcione corretamente será necessário que seu computador saiba o que fazer com ela, portanto vamos seguir os seguintes passos:
+
+  ```shell 
+  $ git eval $(ssh-agent -s)
+  ```
   Ao utilizar esse comando voce esta indicando para o computador iniciar o projeto e executar esse processo em segundo plano. <br>
+  
   Logo após sera exibida uma mensagem semelhante a essa "Agent pid 300" (Número gerado aleatoriamente), então digite os seguinte comando, no qual direcionara para o acesso a sua chave privada: <br> <br>
     ```shell 
     $ git ssh-add "caminhoAteChave"
     ex: $ git ssh-add "C:\Users\usuario/.ssh/id_ed25519"
-    ```<br> <br>
+    ```
+  
   Logo apos sera exigido que digite a senha a qual foi criada a chave. <br>
   Prontinho sua chave foi gerada com sucesso,ativada e vinculada a sua conta, mas Lembre-se *NUNCA DIVULGUE SUA CHAVE PRIVADA*!!! <br>
   Sempre que você quiser acessar um servidor remoto, basta copiar ou pedir que o administrador copie sua chave pública para ele. <br>
