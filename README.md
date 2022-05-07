@@ -176,7 +176,7 @@ Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos 
   1 - Inicialmente vamos gerar uma nova chave (Será necessário utilizar o email o qual está vinculado ao GitHub para gerar a chave) <br>
     ```shell
     $ git ssh-keygen -t ed25519 -C seuemail@mail.com
-    ``` 
+    ``` <br>
     Após ser a execução do comando, perguntará qual local a chave será armazenada, para selecionar o local padrão bastar apertar Enter (Recomendado utilizar padrão) <br>
     Logo após aparecerá um campo para criar uma senha ou continuar sem uma senha (Altamente recomendado criar uma senha) <br>
     Ao final será gerado duas chaves, uma publica e outra privada e será exibido o Local onde foram salvas (Importate) <br>
@@ -186,12 +186,12 @@ Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos 
     ```shell 
     $ git cd "CaminhoAteDiretorio"
     ex: $ git cd "C:\Users\usuario/.ssh/"
-    ``` 
+    ``` <br>
     
   Entao iremos acessar o arquivo que contem a chave publica através do comando: <br>
      ```shell 
     $ git cat id_ed25519.pub
-    ```
+    ``` <br>
   Irá aparecer a chave gerada, você deverá copiá-la e vincula-la a suas chaves através do seu Perfil no GitHub > settings > SSH and GPG keys > new SSH Key <br>
   O Titulo fica a seu critério Ok? ;) <br>
   Logo após sera exigido sua senha do GitHub para validação. <br>
@@ -200,13 +200,13 @@ Após adicionarmos os arquivos e diretórios modificados ao _Index_, precisamos 
   Para que sua chave funcione corretamente será necessário que seu computador saiba o que fazer com ela, portanto vamos seguir os seguintes passos: <br>
     ```shell 
     $ git eval $(ssh-agent -s)
-    ``` 
+    ``` <br>
   Ao utilizar esse comando voce esta indicando para o computador iniciar o projeto e executar esse processo em segundo plano. <br>
   Logo após sera exibida uma mensagem semelhante a essa "Agent pid 300" (Número gerado aleatoriamente), então digite os seguinte comando, no qual direcionara para o acesso a sua chave privada: <br>
     ```shell 
     $ git ssh-add "caminhoAteChave"
     ex: $ git ssh-add "C:\Users\usuario/.ssh/id_ed25519"
-    ```
+    ```<br>
   Logo apos sera exigido que digite a senha a qual foi criada a chave. <br>
   Prontinho sua chave foi gerada com sucesso,ativada e vinculada a sua conta, mas Lembre-se *NUNCA DIVULGUE SUA CHAVE PRIVADA*!!! <br>
   Sempre que você quiser acessar um servidor remoto, basta copiar ou pedir que o administrador copie sua chave pública para ele. <br>
