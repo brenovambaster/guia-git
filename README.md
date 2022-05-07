@@ -30,10 +30,21 @@ ___Ainda está em andamento...___
 ___
 
 
+<h1 align="center"> ☕ Our Contributors </h1>
+<h2 align="center">
+    <p>
+        <a href="https://github.com/Shubhamrawat5/open-source-contribution/graphs/contributors">
+            <img src="https://contrib.rocks/image?repo=brenovambaster/guia-git&max=12" />
+        </a>
+    </p>
+    
+</h2>
+
+___
 
 | Índice                                                                |                    |
 | --------------------------------------------------------------------- | ------------------ |
-| [0. Notas](#0-notas)                                                  | [8. Merge](#merge) |
+| [0. Notas](#0-notas)                                                  | [8. Merge](#8-merge) |
 | [1. Init](#1-inicializando-o-repositório-local)                       | [9. Chave SSH ]()  |
 | [2. Status](#2-verificar-o-status-do-repositório)                     | [10. Title]()      |
 | [3. Add](#3-adicionar-os-arquivos-ou-diretórios-modificados-ao-index) | [11. Title]()      |
