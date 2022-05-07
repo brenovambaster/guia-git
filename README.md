@@ -69,7 +69,7 @@ ___
 
 ## 1 Inicializando o repositório local e Configurando Usuário
 
-Se é a primeira vez que você usa o Git é necessário configurar seu Usuário, atravez dessa configuração será indicado que você é o autor do conteudo ali colocado <br>
+Se é a primeira vez que você usa o Git é necessário configurar seu Usuário, atravez dessa configuração será indicado que você é o autor do conteúdo ali colocado. <br>
 Para realizar essa configuração basta realizar os seguintes comandos: <br>
   ```shell
   $ git config --global user.mail "seuEmail@mail.com"
