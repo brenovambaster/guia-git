@@ -67,11 +67,34 @@ ___
 * Após baixado, instalado e configurado o git, vamos criar o nosso primeiro repositório.
 
 
-## 1 Inicializando o repositório local
+## 1 Inicializando o repositório local e Configurando Usuário
+
+Se é a primeira vez que você usa o Git é necessário configurar seu Usuário, atravez dessa configuração será indicado que você é o autor do conteúdo ali colocado. <br>
+***Importante: Use o mesmo Nome e Email do seu GitHub*** <br>
+Para realizar essa configuração basta realizar os seguintes comandos: <br>
+  ```shell
+  $ git config --global user.mail "seuEmail@mail.com"
+  ```
+  ```shell
+  $ git config --global user.name seuNome
+  ```
+  Pronto seu usuário está configurado! <br>
+  Para checar as configurações e ver se realmente foi salvo corretamente as informações use: <br>
+  ```shell
+  $ git config --list
+  ```
+  Caso tenha Digitado algo errado e queira remover o usario/email basta usar os seguintes comandos: <br>
+  ```shell
+  $ git config --global --unset user.email
+  ```
+  ```shell
+  $ git config --global --unset user.nickname
+  ```
+  <p>Com o seguinte comando você cria o seu repositório local e está pronto para clonar ou criar o seu projeto.</p> 
+  
   ```shell
   $ git init
   ```
-  <p>Com esse comando você cria o seu repositório local e está pronto para clonar ou criar o seu projeto.</p>
 
 ## 2 Verificar o status do repositório
   ```shell
@@ -157,7 +180,11 @@ ___
     ```shell  
     $ git diff 
     ``` 
-
+  - ### remote
+    Mostra o caminho ao qual o repositório remoto está vinculado. <br>
+    ```shell 
+      $ git remote -v
+    ``` 
 
 
 
@@ -203,6 +230,7 @@ ___
     
   ### 2 - Adicionando Chave SSH ao GitHub
   Logo após iremos acessar o local onde foi salvo as chaves através do comando: <br> <br>
+  
   ```shell 
     $ git cd "CaminhoAteDiretorio"
     ex: $ git cd "C:\Users\usuario/.ssh/"
@@ -227,10 +255,11 @@ ___
   Ao utilizar esse comando voce esta indicando para o computador iniciar o projeto e executar esse processo em segundo plano. <br>
   
   Logo após sera exibida uma mensagem semelhante a essa "Agent pid 300" (Número gerado aleatoriamente), então digite os seguinte comando, no qual direcionara para o acesso a sua chave privada: <br> <br>
-    ```shell 
-    $ git ssh-add "caminhoAteChave"
-    ex: $ git ssh-add "C:\Users\usuario/.ssh/id_ed25519"
-    ```
+    
+  ```shell 
+  $ git ssh-add "caminhoAteChave"
+  ex: $ git ssh-add "C:\Users\usuario/.ssh/id_ed25519"
+  ```
   
   Logo apos sera exigido que digite a senha a qual foi criada a chave. <br>
   Prontinho sua chave foi gerada com sucesso,ativada e vinculada a sua conta, mas Lembre-se *NUNCA DIVULGUE SUA CHAVE PRIVADA*!!! <br>
