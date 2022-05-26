@@ -33,7 +33,7 @@ ___
 <h1 align="center"> ☕ Our Contributors </h1>
 <h2 align="center">
     <p>
-        <a href="https://github.com/Shubhamrawat5/open-source-contribution/graphs/contributors">
+        <a href="https://github.com/brenovambaster/guia-guit/graphs/contributors">
             <img src="https://contrib.rocks/image?repo=brenovambaster/guia-git&max=12" />
         </a>
     </p>
