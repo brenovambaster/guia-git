@@ -65,7 +65,7 @@ ___
 
 ## 0 Notas:  
  
-* O Livro gratuito para aprender git: http://git-scm.com/book/pt-br/v2
+* O Livro gratuito para aprender git: [http://git-scm.com/book/pt-br/v2](http://git-scm.com/book/pt-br/v2)
 
 * Após baixado, instalado e configurado o git, vamos criar o nosso primeiro repositório.
 
