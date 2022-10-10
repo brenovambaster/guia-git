@@ -53,10 +53,13 @@ ___
 | [6. Checkout](#6-checkout)                                            | [14. Title]()      |
 | [7. Reset](#6-checkout)                                               | [15. Title]()      |
    
-   
-   
-  
-   
+## Tasks a serem feitas: 
+- [ ] Alterar mensagem do commit depois de enviado;
+- [ ] git merge
+- [ ] git brachs
+- [ ] ver a possibilidade de reestruturar os capítulos desse guia  
+- [ ] repositórios remotos
+
 
 ___
 
