@@ -42,19 +42,19 @@ ___
 
 ___
 
-| Índice                                                                |                    |
-| --------------------------------------------------------------------- | ------------------ |
-| [0. Notas](#0-notas)                                                  | [8. Merge](#8-merge) |
-| [1. Init](#1-inicializando-o-repositório-local)                       | [9. Chave SSH ](#9-chave-ssh-o-que-é-e-como-gerar)  |
-| [2. Status](#2-verificar-o-status-do-repositório)                     | [10. Branchs]()      |
-| [3. Add](#3-adicionar-os-arquivos-ou-diretórios-modificados-ao-index) | [11. Repositórios remotos]()      |
-| [4. Commit](#4-comitar-arquivo-ou-diretório)                          | [12. Title]()      |
-| [5. Log e show](#5-visualizando-alterações)                           | [13. Title]()      |
-| [6. Checkout](#6-checkout)                                            | [14. Title]()      |
-| [7. Reset](#6-checkout)                                               | [15. Title]()      |
+| Índice                                                                |                                                    |
+| --------------------------------------------------------------------- | -------------------------------------------------- |
+| [0. Notas](#0-notas)                                                  | [8. Merge](#8-merge)                               |
+| [1. Init](#1-inicializando-o-repositório-local)                       | [9. Chave SSH ](#9-chave-ssh-o-que-é-e-como-gerar) |
+| [2. Status](#2-verificar-o-status-do-repositório)                     | [10. Branchs]()                                    |
+| [3. Add](#3-adicionar-os-arquivos-ou-diretórios-modificados-ao-index) | [11. Repositórios remotos]()                       |
+| [4. Commit](#4-comitar-arquivo-ou-diretório)                          | [12. Title]()                                      |
+| [5. Log e show](#5-visualizando-alterações)                           | [13. Title]()                                      |
+| [6. Checkout](#6-checkout)                                            | [14. Title]()                                      |
+| [7. Reset](#6-checkout)                                               | [15. Title]()                                      |
    
 ## Tasks a serem feitas: 
-- [ ] Alterar mensagem do commit depois de enviado;
+- [x] Alterar mensagem do commit depois de enviado;
 - [ ] git merge
 - [ ] git brachs
 - [ ] ver a possibilidade de reestruturar os capítulos desse guia  
@@ -135,6 +135,18 @@ Para realizar essa configuração basta realizar os seguintes comandos: <br>
   ```shell
   $ git commit -m"messagem para o commit"
   ```
+  - #### 4.1 Editar mensagem do commit: 
+    Se uma mensagem do commit contiver informações imprecisas, incorretas ou confidenciais, você poderá corrigi-las localmente e fazer push de um novo commit com uma nova mensagem para o GitHub. Também é possível alterar uma mensagem do commit para adicionar informações ausentes.
+
+    Você pode alterar a mensagem de commit mais recente usando o comando 
+  
+    ```shell
+      $ git commit --amend
+    ```
+***Atenção** : No Git, o texto da mensagem do commit faz parte do commit. **Alterar a mensagem do commit mudará o ID do commit**, isto é, a soma de verificação SHA1 que nomeia o commit. **Efetivamente, você está criando um commit que substitui o antigo.***
+  
+**OBS** Esse guia foi feito para ser curto e objetivo, para mais informações consulte o artigo -->  [Guia](https://docs.github.com/pt/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message)
+
 
 ## 5 Visualizando alterações
   - ### log
