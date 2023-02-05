@@ -236,7 +236,7 @@ ___
   ### 1 - Inicialmente vamos gerar uma nova chave (Será necessário utilizar o email o qual está vinculado ao GitHub para gerar a chave)
 
   ```shell
-    $ git ssh-keygen -t ed25519 -C seuemail@mail.com
+    $  ssh-keygen -t ed25519 -C seuemail@mail.com
   ```
 
   Após ser a execução do comando, perguntará qual local a chave será armazenada, para selecionar o local padrão bastar apertar Enter (Recomendado utilizar padrão) <br>
@@ -247,14 +247,14 @@ ___
   Logo após iremos acessar o local onde foi salvo as chaves através do comando: <br> <br>
   
   ```shell 
-    $ git cd "CaminhoAteDiretorio"
-    ex: $ git cd "C:\Users\usuario/.ssh/"
+    $  cd "CaminhoAteDiretorio"
+    ex: $ cd "C:\Users\usuario/.ssh/"
   ```
     
   Entao iremos acessar o arquivo que contem a chave publica através do comando: <br> <br>
     
   ```shell 
-    $ git cat id_ed25519.pub 
+    $  cat id_ed25519.pub 
   ```
   Irá aparecer a chave gerada, você deverá copiá-la e vincula-la a suas chaves através do seu Perfil no GitHub > settings > SSH and GPG keys > new SSH Key <br>
   O Titulo fica a seu critério Ok? ;)
@@ -265,20 +265,24 @@ ___
   Para que sua chave funcione corretamente será necessário que seu computador saiba o que fazer com ela, portanto vamos seguir os seguintes passos:
 
   ```shell 
-  $ git eval $(ssh-agent -s)
+  $ eval $(ssh-agent -s)
   ```
   Ao utilizar esse comando voce esta indicando para o computador iniciar o projeto e executar esse processo em segundo plano. <br>
   
   Logo após sera exibida uma mensagem semelhante a essa "Agent pid 300" (Número gerado aleatoriamente), então digite os seguinte comando, no qual direcionara para o acesso a sua chave privada: <br> <br>
     
   ```shell 
-  $ git ssh-add "caminhoAteChave"
-  ex: $ git ssh-add "C:\Users\usuario/.ssh/id_ed25519"
+  $  ssh-add "caminhoAteChave"
+  ex: $  ssh-add "C:\Users\usuario/.ssh/id_ed25519"
   ```
   
-  Logo apos sera exigido que digite a senha a qual foi criada a chave. <br>
+
+  Logo após sera exigido que digite a senha a qual foi criada a chave. <br>
   Prontinho sua chave foi gerada com sucesso,ativada e vinculada a sua conta, mas Lembre-se *NUNCA DIVULGUE SUA CHAVE PRIVADA*!!! <br>
   Sempre que você quiser acessar um servidor remoto, basta copiar ou pedir que o administrador copie sua chave pública para ele. <br>
+
+### Caso tenha algum problema...
+  > Acesse o link do artigo  do GitHub, lá está bem explicado e com passo a passo. [Artigo github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
 
 <br><br><br><br><br><br>
